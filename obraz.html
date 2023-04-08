@@ -1,0 +1,41 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+ opis obrazka <br>
+
+<textarea name="nazwa" cols="60" rows="15" readonly>
+
+1)kiedy powstała
+
+2)dlaczego jest to język skryptowy
+
+3)gdzie jest wykonywany JS (klient lub serwer).
+
+-dlaczego jest to bezpieczne narzędzie
+
+4)czy jest to język obiektowy , jeśli tak to dlaczego.
+</textarea>
+<br>
+
+<textarea name="nazwa" cols="60" rows="15" readonly>
+<input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')">
+Tworzenie przycisku, który pod kliknieciu uruchamia funkcję WinOpen().
+
+window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");
+Instrukcja otwierająca nową stronę jako nowe okno.
+
+window.close()
+Zamknięcie strony.
+</textarea> <br>
+
+ <img src="obraz1.gif" />
+ <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</body>
+</html>
