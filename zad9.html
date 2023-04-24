@@ -1,0 +1,21 @@
+<html> 
+    <body> 
+        <div style="color:green;font-size:58px;">
+            <script language="JavaScript">
+                var D1_wal = parseInt(prompt("Wprowadź dzień", "Wprowadź dzień"));
+                var G1_wal = parseInt(prompt("Wprowadź godzinę", "Wprowadź godzinę"));
+                var D2_wal = parseInt(prompt("Wprowadź dzień", "Wprowadź dzień"));
+                var G2_wal = parseInt(prompt("Wprowadź godzinę", "Wprowadź godzinę"));
+                if (D1_wal!=null && D1_wal!="" && D2_wal!=null && D2_wal!="" && G1_wal!=null && G1_wal!="" && G2_wal!=null && G2_wal!=""){ 
+                    var sekundy = Math.abs( D1_wal - D2_wal )*24*60*60;
+                    if( G1_wal > G2_wal )
+                        sekundy = sekundy + (G1_wal - G2_wal )*60*60;
+                    else 
+                        sekundy = sekundy - (G2_wal - G1_wal )*60*60;
+                    document.write("Pomiędzy datami jest " + sekundy + " sekund"); 
+                } 
+            </script> 
+        </div>
+    </body> 
+</html>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> Użycie fukcji </title> 
+    <meta charset="utf-8"> 
+ </head> 
+<body>
+    <div style="color:navy;font-size:50px;">
+        <script language="JavaScript">
+         var a=parseFloat(prompt("a=",""));
+         var b=parseFloat(prompt("b=",""));
+         function suma_wal(a, b) {
+            return a + b;
+         }
+         function odejmowanie_wal(a, b) {
+            return a - b;
+         }
+         function mnozenie_wal(a, b) {
+            return a * b;
+         }
+         function od_kwadratu_wal(a, b) {
+            for(var i=Math.pow(a,2); i<=Math.pow(b,2); i++){
+                document.write(i+" ");
+            }
+         }
+         function reszta_wal(a, b) {
+            return a % b;
+         }
+         document.write("suma="+suma_wal(a,b)+"<br>");
+         document.write("Odejmowanie="+odejmowanie_wal(a,b)+"<br>");
+         document.write("Mnożenie="+mnozenie_wal(a,b)+"<br>");
+         od_kwadratu_wal(a,b);
+         document.write("<br>Reszta="+reszta_wal(a,b)+"<br>");
+        </script>
+    </div>
+</body>
+</html>

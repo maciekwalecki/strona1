@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title> Użycie fukcji </title> 
+    <meta charset="utf-8"> 
+ </head> 
+<body>
+    <script>
+        function oblicz(){
+            var x = document.getElementById("i1").value;
+            var y = document.getElementById("i2").value;
+            var z = Math.sqrt( Math.pow(parseInt(x),2) + Math.pow(parseInt(y),2) );
+            document.getElementById("i3").value = z.toFixed(2);
+        }
+    </script>
+    
+        <label> Podaj d= </label>
+        <input type="text" id="i1">
+        <label> Podaj x= </label>
+        <input type="text" id="i2"><br>
+        <input type="submit" value="oblicz" onclick="oblicz()">
+        
+        <br>
+        <label> Drabina= </label>
+        <input type="text" id="i3">
+        <label> Alfa= </label>
+        <input type="text" id="i4">
+      
+</body>
+</html>
